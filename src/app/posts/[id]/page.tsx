@@ -20,8 +20,9 @@ export default function PostPage({ params }: { params: { id: string } }) {
   return (
     <main className="flex min-h-screen flex-col items-center p-24">
       <h1 className="text-4xl font-bold mb-8">{post.title}</h1>
-      <div className="max-w-2xl">
+      <div className="max-w-2xl text-center">
         <p>{post.content}</p>
+        <p className="text-sm text-gray-500 mt-4">This page was generated at {new Date().toLocaleTimeString()}.</p>
       </div>
     </main>
   );
